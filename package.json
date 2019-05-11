@@ -1,0 +1,24 @@
+{
+  "name": "atom-design-mobile",
+  "version": "1.0.0",
+  "description": "atom-design demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-design/doc.git"
+  },
+  "keywords": [
+    "atom",
+    "design",
+    "mobile"
+  ],
+  "author": "Reming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom-design/doc/issues"
+  },
+  "homepage": "https://github.com/atom-design/doc#readme"
+}
