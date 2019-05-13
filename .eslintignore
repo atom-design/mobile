@@ -1,0 +1,9 @@
+/build/
+/config/
+/dist/
+/*.js
+/test/unit/coverage/
+/src/atom-design
+/src/lib
+/src/components
+/src/main.js

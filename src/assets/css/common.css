@@ -1,0 +1,75 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei';
+  background: #fafbfc;
+  user-select: none;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+ul, ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: none;
+}
+
+input, button, textarea {
+  border: none;
+  outline: none;
+  padding: none;
+}
+textarea {
+  resize: none;
+}
+
+.atom-col-3, .atom-col-6, .atom-col-9, .atom-col-12, .atom-col-15, .atom-col-18, .atom-col-21, .atom-col-24 {
+  display: flex;
+  flex: 0 0 auto;
+}
+.atom-col-3 {
+  width: 12.5%;
+}
+.atom-col-6 {
+  width: 25%;
+}
+.atom-col-9 {
+  width: 37.5%;
+}
+.atom-col-12 {
+  width: 50%;
+}
+.atom-col-15 {
+  width: 67.5%;
+}
+.atom-col-18 {
+  width: 75%;
+}
+.atom-col-21 {
+  width: 87.5%;
+}
+.atom-col-24 {
+  width: 100%;
+}
