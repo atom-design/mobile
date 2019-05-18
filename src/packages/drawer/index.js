@@ -1,4 +1,4 @@
-import './index.css';
+import './style.css';
 import {fadeTransition} from '../common/transition';
 
 export default {

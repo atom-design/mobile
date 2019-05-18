@@ -1,6 +1,7 @@
-import './index.css';
+import './style.css';
 
 export default {
+  name: 'atom-textarea',
   data () {
     return {
       length: 0

@@ -58,6 +58,9 @@ export default {
       width: 80%;
       height: 100%;
       background: white;
+      list-style: none;
+      margin: 0;
+      padding: 0;
       .item {
         color: black;
         height: 50px;

@@ -9,22 +9,12 @@ html, body {
   user-select: none;
 }
 
-*::before, *::after {
-  box-sizing: border-box;
-}
-
 .clearfix::before, .clearfix::after {
   content: ' ';
   display: table;
 }
 .clearfix::after {
   clear: both;
-}
-
-ul, ol{
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -34,15 +24,6 @@ a {
 
 h1, h2, h3, h4, p {
   margin: none;
-}
-
-input, button, textarea {
-  border: none;
-  outline: none;
-  padding: none;
-}
-textarea {
-  resize: none;
 }
 
 .atom-col-3, .atom-col-6, .atom-col-9, .atom-col-12, .atom-col-15, .atom-col-18, .atom-col-21, .atom-col-24 {

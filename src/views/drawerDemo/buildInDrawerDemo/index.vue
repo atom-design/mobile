@@ -57,6 +57,9 @@ export default {
     .menu {
       width: 80%;
       height: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
       .item {
         color: black;
         height: 50px;

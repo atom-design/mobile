@@ -1,4 +1,4 @@
-import './index.css';
+import './style.css';
 
 export default {
   name: 'atom-pull',

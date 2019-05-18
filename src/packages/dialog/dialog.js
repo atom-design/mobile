@@ -1,4 +1,4 @@
-import './index.css';
+import './style.css';
 import atomBtn from '../button';
 import atomPopup from '../common/mixin/popup';
 import {scaleTransition} from '../common/transition';

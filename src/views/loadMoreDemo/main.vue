@@ -41,6 +41,9 @@ export default {
 <style lang="postcss" scoped>
 .list-wrapper {
   height: calc(100vh - 54px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
   .list-item {
     height: 50px;
     line-height: 50px;

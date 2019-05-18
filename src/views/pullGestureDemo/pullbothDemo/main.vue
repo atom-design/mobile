@@ -66,6 +66,9 @@ export default {
       text-align: center;
     }
     ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       li {
         height: 50px;
         line-height: 50px;
