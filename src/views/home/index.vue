@@ -9,6 +9,7 @@
 import headerBar from './header.vue'
 export default {
   mounted () {
+    if (!this.$el.scrollTo) return
     if (localStorage.scrollPosition) {
       this.$el.scrollTo(0, ~~localStorage.scrollPosition)
     }
