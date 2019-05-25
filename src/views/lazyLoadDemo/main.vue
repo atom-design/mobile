@@ -18,25 +18,28 @@ export default {
     return {
       lazyDefault: lazyDefault,
       dataList: [{
-        url: 'http://img3.imgtn.bdimg.com/it/u=2705788817,137013700&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload1.jpg'
       },
       {
-        url: 'http://img4.imgtn.bdimg.com/it/u=267907305,2843671657&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload2.jpg'
       },
       {
-        url: 'http://img1.imgtn.bdimg.com/it/u=2146458810,616143025&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload3.jpg'
       },
       {
-        url: 'http://img2.imgtn.bdimg.com/it/u=133522425,2118378143&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload4.jpg'
       },
       {
-        url: 'http://img4.imgtn.bdimg.com/it/u=267907305,2843671657&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload5.jpg'
       },
       {
-        url: 'http://img3.imgtn.bdimg.com/it/u=2705788817,137013700&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload6.jpg'
       },
       {
-        url: 'http://img4.imgtn.bdimg.com/it/u=267907305,2843671657&fm=26&gp=0.jpg'
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload7.jpg'
+      },
+      {
+        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload8.jpg'
       }]
     }
   },
