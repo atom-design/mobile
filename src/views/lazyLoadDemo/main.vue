@@ -18,28 +18,28 @@ export default {
     return {
       lazyDefault: lazyDefault,
       dataList: [{
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload1.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef66f2214ca3b?w=500&h=313&f=jpeg&s=43283'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload2.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef67118892ae5?w=500&h=313&f=jpeg&s=36490'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload3.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef672bdb10786?w=708&h=300&f=jpeg&s=38633'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload4.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef674051d932e?w=330&h=220&f=jpeg&s=27736'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload5.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef675a2704db2?w=533&h=300&f=jpeg&s=27931'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload6.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef67730754043?w=500&h=334&f=jpeg&s=30308'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload7.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef6796f385990?w=500&h=312&f=jpeg&s=17877'
       },
       {
-        url: 'https://raw.githubusercontent.com/atom-design/docs/master/src/assets/img/lazyload8.jpg'
+        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef67afc5f6875?w=500&h=313&f=jpeg&s=31278'
       }]
     }
   },
