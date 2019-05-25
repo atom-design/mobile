@@ -18,25 +18,25 @@ export default {
     return {
       lazyDefault: lazyDefault,
       dataList: [{
-        url: 'http://img15.3lian.com/2015/f2/160/d/71.jpg'
+        url: 'http://img3.imgtn.bdimg.com/it/u=2705788817,137013700&fm=26&gp=0.jpg'
       },
       {
-        url: 'http://img15.3lian.com/2015/f2/160/d/71.jpg'
+        url: 'http://img4.imgtn.bdimg.com/it/u=267907305,2843671657&fm=26&gp=0.jpg'
       },
       {
-        url: 'http://img2.3lian.com/2014/f4/158/d/105.jpg'
+        url: 'http://img1.imgtn.bdimg.com/it/u=2146458810,616143025&fm=26&gp=0.jpg'
       },
       {
-        url: 'http://img15.3lian.com/2015/f2/160/d/71.jpg'
+        url: 'http://img2.imgtn.bdimg.com/it/u=133522425,2118378143&fm=26&gp=0.jpg'
       },
       {
-        url: 'http://img2.3lian.com/2014/f4/158/d/105.jpg'
+        url: 'http://img4.imgtn.bdimg.com/it/u=267907305,2843671657&fm=26&gp=0.jpg'
       },
       {
-        url: 'http://img15.3lian.com/2015/a1/13/d/6.jpg'
+        url: 'http://img3.imgtn.bdimg.com/it/u=2705788817,137013700&fm=26&gp=0.jpg'
       },
       {
-        url: 'http://img2.3lian.com/2014/f4/158/d/105.jpg'
+        url: 'http://img4.imgtn.bdimg.com/it/u=267907305,2843671657&fm=26&gp=0.jpg'
       }]
     }
   },
