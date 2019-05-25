@@ -1,7 +1,7 @@
 <template>
   <div class="picker-demo-wrapper">
     <top-bar :title="'Picker'"></top-bar>
-    <atom-btn  v-for="(item, index) in demoList" :key="index" size="large" v-text="item.text" @click.native="toastShow(item.type)" style="box-shadow: 0 0 20px 1px #ccc; width: 90%; margin: 20px auto;"></atom-btn>
+    <atom-btn  v-for="(item, index) in demoList" :key="index" size="large" v-text="item.text" @click.native="pickerShow(item.type)" style="box-shadow: 0 0 20px 1px #ccc; width: 90%; margin: 20px auto;"></atom-btn>
   </div>
 </template>
 
@@ -14,8 +14,12 @@ export default {
   data () {
     return {
       demoList: [{
-        text: 'custom picker',
+        text: 'default picker',
         type: 0
+      },
+      {
+        text: 'custom picker',
+        type: 1
       }]
     }
   },
@@ -27,7 +31,7 @@ export default {
     submit (val) {
       toast(val.toString());
     },
-    toastShow (type) {
+    pickerShow (type) {
       const monthArr = [{
         text: 1,
         childrens: [{
@@ -39,7 +43,7 @@ export default {
         text: 9,
         childrens: [{text: 2}, {text: 3}, {text: 4}, {text: 5}]
       }, {text: 10}, {text: 11}, {text: 12}, {text: 13}];
-      var options = {
+      var options1 = {
         data: [{
           text: 1996,
           childrens: monthArr
@@ -65,9 +69,50 @@ export default {
           event: this.submit
         }
       }
+      var options2 = {
+        data: [{
+          text: 1996,
+          childrens: monthArr
+        },
+        {
+          text: 1997,
+          childrens: monthArr1
+        },
+        {
+          text: 1998,
+          childrens: monthArr
+        },
+        {
+          text: 1999,
+          childrens: monthArr
+        },
+        {
+          text: 2000,
+          childrens: monthArr
+        }],
+        cancelBtn: {
+          text: '取消',
+          actionStyle: {
+            background: '#dd2622',
+            color: 'white'
+          },
+          style: 'color: #dd2622;'
+        },
+        submitBtn: {
+          text: '确定',
+          actionStyle: {
+            background: '#0000ff',
+            color: 'white'
+          },
+          event: this.submit
+        }
+      }
       switch (type) {
         case 0:
-          picker(options);
+          picker(options1)
+          break
+        case 1:
+          picker(options2)
           break
       }
     }
