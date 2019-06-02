@@ -17,11 +17,9 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import atomBtn from '@/packages/button'
 export default {
   components: {
-    topBar,
-    atomBtn
+    topBar
   }
 }
 </script>

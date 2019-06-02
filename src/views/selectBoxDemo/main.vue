@@ -7,9 +7,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import selectBox from '@/packages/selectBox'
-import atomBtn from '@/packages/button'
-import toast from '@/packages/toast'
 export default {
   data () {
     return {
@@ -24,14 +21,13 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomBtn
+    topBar
   },
   methods: {
     dialogShow (type) {
       switch (type) {
         case 0:
-          selectBox({
+          this.$selectBox({
             list: [{
               text: '标为未读'
             },
@@ -39,11 +35,11 @@ export default {
               text: '消息置顶'
             }]
           }, (msg, index) => {
-            toast(`${msg}, ${index}`);
+            this.$toast(`${msg}, ${index}`);
           });
           break
         case 1:
-          selectBox({
+          this.$selectBox({
             list: [{
               text: '标为未读',
               style: 'color: #108ee9;'
@@ -53,7 +49,7 @@ export default {
               style: 'color: #dd2622;'
             }]
           }, (msg, index) => {
-            toast(`${msg}, ${index}`);
+            this.$toast(`${msg}, ${index}`);
           })
           break
       }

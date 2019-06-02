@@ -7,9 +7,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import atomBtn from '@/packages/button'
-import picker from '@/packages/picker'
-import toast from '@/packages/toast'
 export default {
   data () {
     return {
@@ -24,12 +21,11 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomBtn
+    topBar
   },
   methods: {
     submit (val) {
-      toast(val.toString());
+      this.$toast(val.toString());
     },
     pickerShow (type) {
       const monthArr = [{
@@ -109,10 +105,10 @@ export default {
       }
       switch (type) {
         case 0:
-          picker(options1)
+          this.$picker(options1)
           break
         case 1:
-          picker(options2)
+          this.$picker(options2)
           break
       }
     }

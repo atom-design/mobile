@@ -4,27 +4,27 @@
     <div class="range-content">
       <div class="range-title">默认</div>
       <div class="range-item">
-        <range v-model="range0"></range>
+        <atom-range v-model="range0"></atom-range>
       </div>
     </div>
     <div class="range-content">
       <div class="range-title">设置区间</div>
       <div class="range-item">
-        <range :min="10" :max="90" v-model="range1"></range>
+        <atom-range :min="10" :max="90" v-model="range1"></atom-range>
       </div>
     </div>
     <div class="range-content">
       <div class="range-title">取消指示
       </div>
       <div class="range-item">
-        <range v-model="range2" :isIndicator='false'></range>
+        <atom-range v-model="range2" :isIndicator='false'></atom-range>
       </div>
     </div>
     <div class="range-content">
       <div class="range-title">自定义
       </div>
       <div class="range-item">
-        <range v-model="range2" color="#dd2622"></range>
+        <atom-range v-model="range2" color="#dd2622"></atom-range>
       </div>
     </div>
   </div>
@@ -32,7 +32,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import range from '@/packages/range'
 export default {
   data () {
     return {
@@ -42,8 +41,7 @@ export default {
     }
   },
   components: {
-    topBar,
-    range
+    topBar
   }
 }
 </script>

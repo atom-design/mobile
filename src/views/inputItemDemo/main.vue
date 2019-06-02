@@ -2,25 +2,24 @@
   <div class="inputItem-demo-wrapper">
     <top-bar :title="'InputItem'"></top-bar>
     <demo-title>默认</demo-title>
-    <atom-input :title="'默认标题'" :placeholder="'Please Input'" v-model="input0"></atom-input>
+    <atom-input-item :title="'默认标题'" :placeholder="'Please Input'" v-model="input0"></atom-input-item>
     <demo-title>无清空按钮</demo-title>
-    <atom-input :title="'默认标题'" :placeholder="'Please Input'" :canClear="false"></atom-input>
+    <atom-input-item :title="'默认标题'" :placeholder="'Please Input'" :canClear="false"></atom-input-item>
     <demo-title>自定义样式</demo-title>
-    <atom-input :title="'默认标题'" style="color: #108ee9" :placeholder="'Please Input'" :inputStyle="{color: '#108ee9'}"></atom-input>
+    <atom-input-item :title="'默认标题'" style="color: #108ee9" :placeholder="'Please Input'" :inputStyle="{color: '#108ee9'}"></atom-input-item>
     <demo-title>类型</demo-title>
-    <atom-input :title="'数字'" :placeholder="'Please Input'" :type="'number'"></atom-input>
-    <atom-input :title="'密码'" :placeholder="'Please Input'" :type="'password'"></atom-input>
+    <atom-input-item :title="'数字'" :placeholder="'Please Input'" :type="'number'"></atom-input-item>
+    <atom-input-item :title="'密码'" :placeholder="'Please Input'" :type="'password'"></atom-input-item>
     <demo-title>右对齐</demo-title>
-    <atom-input :title="'默认标题'" :placeholder="'align right'" :align="'right'"></atom-input>
+    <atom-input-item :title="'默认标题'" :placeholder="'align right'" :align="'right'"></atom-input-item>
     <demo-title>居中</demo-title>
-    <atom-input :title="'默认标题'" :placeholder="'align center'" :align="'center'"></atom-input>
+    <atom-input-item :title="'默认标题'" :placeholder="'align center'" :align="'center'"></atom-input-item>
   </div>
 </template>
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomInput from '@/packages/inputItem'
 export default {
   data () {
     return {
@@ -29,8 +28,7 @@ export default {
   },
   components: {
     topBar,
-    demoTitle,
-    atomInput
+    demoTitle
   }
 }
 </script>

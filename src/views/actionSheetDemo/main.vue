@@ -7,9 +7,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import atomBtn from '@/packages/button'
-import actionSheet from '@/packages/actionSheet'
-import toast from '@/packages/toast'
 export default {
   data () {
     return {
@@ -28,15 +25,13 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomBtn,
-    actionSheet
+    topBar
   },
   methods: {
     actionSheetShow (type) {
       switch (type) {
         case 0:
-          actionSheet({
+          this.$actionSheet({
             list: [{
               text: '选择图片'
             },
@@ -44,11 +39,11 @@ export default {
               text: '选择联系人'
             }]
           }, (msg, index) => {
-            toast(`${msg}, ${index}`);
+            this.$toast(`${msg}, ${index}`);
           });
           break
         case 1:
-          actionSheet({
+          this.$actionSheet({
             cancelBtn: {
               text: 'Cancel'
             },
@@ -59,11 +54,11 @@ export default {
               text: '选择联系人'
             }]
           }, (msg, index) => {
-            toast(`${msg}, ${index}`);
+            this.$toast(`${msg}, ${index}`);
           });
           break
         case 2:
-          actionSheet({
+          this.$actionSheet({
             cancelBtn: {
               text: 'Cancel',
               style: 'color: #dd2622;'
@@ -76,7 +71,7 @@ export default {
               text: '选择联系人'
             }]
           }, (msg, index) => {
-            toast(`${msg}, ${index}`);
+            this.$toast(`${msg}, ${index}`);
           });
           break
       }

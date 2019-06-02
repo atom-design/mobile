@@ -7,8 +7,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import Dialog from '@/packages/dialog'
-import atomBtn from '@/packages/button'
 export default {
   data () {
     return {
@@ -27,14 +25,13 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomBtn
+    topBar
   },
   methods: {
     dialogShow (type) {
       switch (type) {
         case 0:
-          Dialog.alert('Title', 'Description', {
+          this.$dialog.alert('Title', 'Description', {
             isTitle: false,
             submitBtn: {
               text: 'Ok',
@@ -45,7 +42,7 @@ export default {
           });
           break
         case 1:
-          Dialog.confirm('Title', 'Description', {
+          this.$dialog.confirm('Title', 'Description', {
             cancelBtn: {
               text: 'Cancel',
               event: () => {
@@ -61,7 +58,7 @@ export default {
           });
           break
         case 2:
-          Dialog.prompt('Title', 'Description', {
+          this.$dialog.prompt('Title', 'Description', {
             cancelBtn: {
               text: 'Cancel',
               event: () => {

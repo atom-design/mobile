@@ -3,54 +3,52 @@
     <top-bar :title="'Loading'"></top-bar>
     <div class="demo-item">
       <div class="title">默认类型：</div>
-      <loading></loading>
+      <atom-loading></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型1：</div>
-      <loading :type="1"></loading>
+      <atom-loading :type="1"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型2：</div>
-      <loading :type="2"></loading>
+      <atom-loading :type="2"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型3：</div>
-      <loading :type="3"></loading>
+      <atom-loading :type="3"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型4：</div>
-      <loading :type="4"></loading>
+      <atom-loading :type="4"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型5：</div>
-      <loading :type="5"></loading>
+      <atom-loading :type="5"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型6：</div>
-      <loading :type="6"></loading>
+      <atom-loading :type="6"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">类型7：</div>
-      <loading :type="7"></loading>
+      <atom-loading :type="7"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">自定义radius：</div>
-      <loading :type="4" radius="100%"></loading>
+      <atom-loading :type="4" radius="100%"></atom-loading>
     </div>
     <div class="demo-item">
       <div class="title">自定义颜色：</div>
-      <loading :type="1" color="#48D1CC"></loading>
+      <atom-loading :type="1" color="#48D1CC"></atom-loading>
     </div>
   </div>
 </template>
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import loading from '@/packages/loading'
 export default {
   components: {
-    topBar,
-    loading
+    topBar
   }
 }
 </script>

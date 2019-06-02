@@ -29,7 +29,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import atomSwitch from '@/packages/switch'
 export default {
   data () {
     return {
@@ -39,8 +38,7 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomSwitch
+    topBar
   }
 }
 </script>

@@ -2,18 +2,17 @@
   <div class="searchBar-demo-wrapper">
     <top-bar :title="'SearchBar'"></top-bar>
     <demo-title>默认</demo-title>
-    <atom-search placeholder="Please Input" v-model="searchVal"></atom-search>
+    <atom-search-bar placeholder="Please Input" v-model="searchVal"></atom-search-bar>
     <demo-title>无清空按钮</demo-title>
-    <atom-search placeholder="Please Input" :canClear="false"></atom-search>
+    <atom-search-bar placeholder="Please Input" :canClear="false"></atom-search-bar>
     <demo-title>自定义样式</demo-title>
-    <atom-search placeholder="Please Input" style="border-color: #aaa; background: rgba(0, 0, 0, 0.8); color: white"></atom-search>
+    <atom-search-bar placeholder="Please Input" style="border-color: #aaa; background: rgba(0, 0, 0, 0.8); color: white"></atom-search-bar>
   </div>
 </template>
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomSearch from '@/packages/searchBar'
 export default {
   data () {
     return {
@@ -22,8 +21,7 @@ export default {
   },
   components: {
     topBar,
-    demoTitle,
-    atomSearch
+    demoTitle
   }
 }
 </script>

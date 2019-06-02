@@ -19,12 +19,10 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomHeader from '@/packages/header'
 export default {
   components: {
     topBar,
-    demoTitle,
-    atomHeader
+    demoTitle
   }
 }
 </script>

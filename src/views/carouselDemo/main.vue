@@ -3,29 +3,29 @@
     <top-bar :title="'Carousel'"></top-bar>
     <div class="carousel-content">
       <demo-title>默认</demo-title>
-      <carousel v-model="carouselVal1">
+      <atom-carousel v-model="carouselVal1">
         <div class="carousel-item item1">item1</div>
         <div class="carousel-item item2">item2</div>
         <div class="carousel-item item3">item3</div>
-      </carousel>
+      </atom-carousel>
       <demo-title>循环</demo-title>
-      <carousel :loop="true" v-model="carouselVal2">
+      <atom-carousel :loop="true" v-model="carouselVal2">
         <div class="carousel-item item1">item1</div>
         <div class="carousel-item item2">item2</div>
         <div class="carousel-item item3">item3</div>
-      </carousel>
+      </atom-carousel>
       <demo-title>自动轮播</demo-title>
-      <carousel :auto="true" :loop="true" v-model="carouselVal3">
+      <atom-carousel :auto="true" :loop="true" v-model="carouselVal3">
         <div class="carousel-item item1">item1</div>
         <div class="carousel-item item2">item2</div>
         <div class="carousel-item item3">item3</div>
-      </carousel>
+      </atom-carousel>
       <demo-title>分页</demo-title>
-      <carousel :pagination="true" :auto="true" :loop="true" :time="5000">
+      <atom-carousel :pagination="true" :auto="true" :loop="true" :time="5000">
         <div class="carousel-item item1">item1</div>
         <div class="carousel-item item2">item2</div>
         <div class="carousel-item item3">item3</div>
-      </carousel>
+      </atom-carousel>
     </div>
   </div>
 </template>
@@ -33,7 +33,6 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import carousel from '@/packages/carousel'
 export default {
   data () {
     return {
@@ -44,8 +43,7 @@ export default {
   },
   components: {
     topBar,
-    demoTitle,
-    carousel
+    demoTitle
   }
 }
 </script>

@@ -22,8 +22,6 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomPull from '@/packages/pull'
-import atomLoading from '@/packages/loading'
 export default {
   data () {
     return {
@@ -34,9 +32,7 @@ export default {
   },
   components: {
     topBar,
-    demoTitle,
-    atomLoading,
-    atomPull
+    demoTitle
   },
   methods: {
     handleRefresh () {

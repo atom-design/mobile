@@ -40,7 +40,6 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomTabs from '@/packages/tabs'
 export default {
   data () {
     return {
@@ -51,8 +50,7 @@ export default {
   },
   components: {
     topBar,
-    demoTitle,
-    atomTabs
+    demoTitle
   }
 }
 </script>

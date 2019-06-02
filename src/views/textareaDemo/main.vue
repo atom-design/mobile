@@ -13,12 +13,10 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomTextarea from '@/packages/textarea'
 export default {
   components: {
     topBar,
-    demoTitle,
-    atomTextarea
+    demoTitle
   }
 }
 </script>

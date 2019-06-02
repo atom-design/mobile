@@ -30,8 +30,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import atomRadio from '@/packages/radio'
-import toast from '@/packages/toast'
 export default {
   data () {
     return {
@@ -41,18 +39,17 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomRadio
+    topBar
   },
   watch: {
     radio0 (val) {
-      toast(val);
+      this.$toast(val);
     },
     radio1 (val) {
-      toast(val);
+      this.$toast(val);
     },
     radio2 (val) {
-      val === 'true' ? toast('禁用') : val === 'false' ? toast('取消禁用') : toast(val);
+      val === 'true' ? this.$toast('禁用') : val === 'false' ? this.$toast('取消禁用') : this.$toast(val);
     }
   }
 }

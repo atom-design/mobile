@@ -2,23 +2,23 @@
   <div class="slideItem-demo-wrapper">
     <top-bar :title="'SlideItem'"></top-bar>
     <demo-title>右边按钮</demo-title>
-    <atom-slide>
+    <atom-slide-item>
       <div class="slide-demo">向左拖拽</div>
       <div class="slide-action" slot="rightAction">
         <div class="action edit" @click="show">编辑</div>
         <div class="action delete" @click="show">删除</div>
       </div>
-    </atom-slide>
+    </atom-slide-item>
     <demo-title>左边按钮</demo-title>
-    <atom-slide>
+    <atom-slide-item>
       <div class="slide-demo">向右拖拽</div>
       <div class="slide-action" slot="leftAction">
         <div class="action edit" @click="show">编辑</div>
         <div class="action delete" @click="show">删除</div>
       </div>
-    </atom-slide>
+    </atom-slide-item>
     <demo-title>两边按钮</demo-title>
-    <atom-slide>
+    <atom-slide-item>
       <div class="slide-action" slot="rightAction">
         <div class="action edit" @click="show">编辑</div>
         <div class="action delete" @click="show">删除</div>
@@ -27,9 +27,9 @@
       <div class="slide-action" slot="leftAction">
         <div class="action info" @click="show">查看</div>
       </div>
-    </atom-slide>
+    </atom-slide-item>
     <demo-title>控制</demo-title>
-    <atom-slide v-model="isClose">
+    <atom-slide-item v-model="isClose">
       <div class="slide-action" slot="rightAction">
         <div class="action edit" @click="show">编辑</div>
         <div class="action delete" @click="show">删除</div>
@@ -38,15 +38,13 @@
       <div class="slide-action" slot="leftAction">
         <div class="action info" @click="show">查看</div>
       </div>
-    </atom-slide>
+    </atom-slide-item>
   </div>
 </template>
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-import atomSlide from '@/packages/slideItem'
-import toast from '@/packages/toast'
 export default {
   data () {
     return {
@@ -55,12 +53,11 @@ export default {
   },
   components: {
     topBar,
-    demoTitle,
-    atomSlide
+    demoTitle
   },
   methods: {
     show () {
-      toast(event.target.innerHTML);
+      this.$toast(event.target.innerHTML);
       this.isClose = true;
     }
   }

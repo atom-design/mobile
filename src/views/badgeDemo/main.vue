@@ -4,20 +4,20 @@
     <div class="badge-content">
       <div class="badge-title">默认</div>
       <div class="badge-item">
-        <badge>1</badge>
-        <badge type="warning">2</badge>
-        <badge type="danger">3</badge>
+        <atom-badge>1</atom-badge>
+        <atom-badge type="warning">2</atom-badge>
+        <atom-badge type="danger">3</atom-badge>
       </div>
       <div class="badge-title">自定义</div>
       <div class="badge-item">
-        <badge style="background: #48D1CC; border-radius: 6px;">1</badge>
-        <badge type="warning"  style="border-radius: 6px">2</badge>
-        <badge type="danger" style="border-radius: 100%; width: 20px; height: 20px; line-height: 20px; padding: 0;">3</badge>
+        <atom-badge style="background: #48D1CC; border-radius: 6px;">1</atom-badge>
+        <atom-badge type="warning"  style="border-radius: 6px">2</atom-badge>
+        <atom-badge type="danger" style="border-radius: 100%; width: 20px; height: 20px; line-height: 20px; padding: 0;">3</atom-badge>
       </div>
       <div class="badge-title">案例</div>
       <div class="badge-demo">
         <div class="text">未读消息</div>&nbsp;
-        <badge>1</badge>
+        <atom-badge>1</atom-badge>
       </div>
     </div>
   </div>
@@ -25,7 +25,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import badge from '@/packages/badge'
 export default {
   data () {
     return {
@@ -34,8 +33,7 @@ export default {
     }
   },
   components: {
-    topBar,
-    badge
+    topBar
   }
 }
 </script>

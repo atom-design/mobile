@@ -11,8 +11,8 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import lazyLoad from '@/packages/lazyLoad'
 import lazyDefault from '../../assets/img/lazy-default.gif'
+
 export default {
   data () {
     return {
@@ -43,7 +43,6 @@ export default {
       }]
     }
   },
-  directives: lazyLoad,
   components: {
     topBar
   }
@@ -52,7 +51,6 @@ export default {
 
 <style lang="postcss" scoped>
 .list-wrapper {
-  height: calc(100vh - 54px);
   list-style: none;
   margin: 0;
   padding: 0;

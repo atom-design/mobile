@@ -7,8 +7,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import toast from '@/packages/toast'
-import atomBtn from '@/packages/button'
 export default {
   data () {
     return {
@@ -27,20 +25,19 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomBtn
+    topBar
   },
   methods: {
     toastShow (type) {
       switch (type) {
         case 0:
-          toast({message: 'this is message on top posittion', position: 'top'})
+          this.$toast({message: 'this is message on top posittion', position: 'top'})
           break
         case 1:
-          toast({message: 'this is message on middle posittion', position: 'middle'})
+          this.$toast({message: 'this is message on middle posittion', position: 'middle'})
           break
         case 2:
-          toast({message: 'this is message on bottom posittion', position: 'bottom'})
+          this.$toast({message: 'this is message on bottom posittion', position: 'bottom'})
           break
       }
     }

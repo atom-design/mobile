@@ -35,7 +35,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import atomProgress from '@/packages/progress'
 export default {
   data () {
     return {
@@ -45,8 +44,7 @@ export default {
     }
   },
   components: {
-    topBar,
-    atomProgress
+    topBar
   }
 }
 </script>
