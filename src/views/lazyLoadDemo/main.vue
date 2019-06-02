@@ -3,7 +3,7 @@
     <top-bar :title="'Lazy Load'"></top-bar>
     <ul class="list-wrapper">
       <li class="list-item" v-for="(item, index) in dataList" :key="index">
-        <img v-lazyload="item.url" :loading="lazyDefault" alt="lazy-img"/>
+        <img v-lazyload="item" :loading="lazyDefault" alt="lazy-img"/>
       </li>
     </ul>
   </div>
@@ -17,30 +17,16 @@ export default {
   data () {
     return {
       lazyDefault: lazyDefault,
-      dataList: [{
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef66f2214ca3b?w=500&h=313&f=jpeg&s=43283'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef67118892ae5?w=500&h=313&f=jpeg&s=36490'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef672bdb10786?w=708&h=300&f=jpeg&s=38633'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef674051d932e?w=330&h=220&f=jpeg&s=27736'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef675a2704db2?w=533&h=300&f=jpeg&s=27931'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef67730754043?w=500&h=334&f=jpeg&s=30308'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef6796f385990?w=500&h=312&f=jpeg&s=17877'
-      },
-      {
-        url: 'https://user-gold-cdn.xitu.io/2019/5/25/16aef67afc5f6875?w=500&h=313&f=jpeg&s=31278'
-      }]
+      dataList: [
+        'https://unpkg.com/assets-img@1.0.0/lazy_img1.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img2.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img3.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img4.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img5.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img6.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img7.jpg',
+        'https://unpkg.com/assets-img@1.0.0/lazy_img8.jpg'
+      ]
     }
   },
   components: {
