@@ -112,7 +112,7 @@ export default {
         }]
       },
       {
-        title: 'JS Plugin',
+        title: 'Directive',
         childs: [{
           text: 'Load More',
           routeName: 'loadMoreDemo'
