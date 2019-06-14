@@ -11,6 +11,7 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
+// import lazyload from '@/packages/lazyload'
 import lazyDefault from '../../assets/img/lazy-default.gif'
 
 export default {
@@ -29,6 +30,7 @@ export default {
       ]
     }
   },
+  // directives: {lazyload},
   components: {
     topBar
   }

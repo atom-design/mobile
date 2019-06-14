@@ -9,6 +9,7 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
+// import loadmore from '@/packages/loadmore'
 export default {
   data () {
     return {
@@ -19,6 +20,7 @@ export default {
   components: {
     topBar
   },
+  // directives: {loadmore},
   mounted () {
     this.initData()
   },
