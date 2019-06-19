@@ -7,7 +7,7 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-import Dialog from '@/packages/dialog'
+// import Dialog from '@/packages/dialog'
 export default {
   data () {
     return {
@@ -43,7 +43,7 @@ export default {
           });
           break
         case 1:
-          Dialog.confirm('Title', 'Description', {
+          this.$dialog.confirm('Title', 'Description', {
             cancelBtn: {
               text: 'Cancel',
               event: () => {

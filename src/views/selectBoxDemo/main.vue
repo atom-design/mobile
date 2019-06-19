@@ -7,6 +7,7 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
+// import Selectbox from '@/packages/Selectbox'
 export default {
   data () {
     return {
@@ -42,11 +43,15 @@ export default {
           this.$selectBox({
             list: [{
               text: '标为未读',
-              style: 'color: #108ee9;'
+              style: {
+                color: '#108ee9'
+              }
             },
             {
               text: '消息置顶',
-              style: 'color: #dd2622;'
+              style: {
+                color: '#dd2622'
+              }
             }]
           }, (msg, index) => {
             this.$toast(`${msg}, ${index}`);

@@ -20,6 +20,7 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
+// import inputItem from '@/packages/inputItem'
 export default {
   data () {
     return {

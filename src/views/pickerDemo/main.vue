@@ -7,6 +7,7 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
+// import Picker from '@/packages/picker'
 export default {
   data () {
     return {
@@ -92,7 +93,9 @@ export default {
             background: '#dd2622',
             color: 'white'
           },
-          style: 'color: #dd2622;'
+          style: {
+            'color': '#dd2622'
+          }
         },
         submitBtn: {
           text: '确定',

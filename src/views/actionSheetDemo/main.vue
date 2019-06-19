@@ -7,6 +7,7 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
+// import Actionsheet from '@/packages/Actionsheet'
 export default {
   data () {
     return {
@@ -61,11 +62,15 @@ export default {
           this.$actionSheet({
             cancelBtn: {
               text: 'Cancel',
-              style: 'color: #dd2622;'
+              style: {
+                color: '#dd2622'
+              }
             },
             list: [{
               text: '选择图片',
-              style: 'color: #108ee9;'
+              style: {
+                color: '#108ee9'
+              }
             },
             {
               text: '选择联系人'
