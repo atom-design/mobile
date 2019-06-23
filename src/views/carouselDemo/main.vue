@@ -8,6 +8,12 @@
         <div class="carousel-item item2">item2</div>
         <div class="carousel-item item3">item3</div>
       </atom-carousel>
+      <demo-title>分页</demo-title>
+      <atom-carousel :pagination="true" :auto="true" :loop="true" :time="5000">
+        <div class="carousel-item item1">item1</div>
+        <div class="carousel-item item2">item2</div>
+        <div class="carousel-item item3">item3</div>
+      </atom-carousel>
       <demo-title>循环</demo-title>
       <atom-carousel :loop="true" v-model="carouselVal2">
         <div class="carousel-item item1">item1</div>
@@ -20,12 +26,6 @@
         <div class="carousel-item item2">item2</div>
         <div class="carousel-item item3">item3</div>
       </atom-carousel>
-      <demo-title>分页</demo-title>
-      <atom-carousel :pagination="true" :auto="true" :loop="true" :time="5000">
-        <div class="carousel-item item1">item1</div>
-        <div class="carousel-item item2">item2</div>
-        <div class="carousel-item item3">item3</div>
-      </atom-carousel>
     </div>
   </div>
 </template>
@@ -33,6 +33,8 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
+// import carousel from '@/packages/carousel'
+
 export default {
   data () {
     return {
@@ -43,7 +45,8 @@ export default {
   },
   components: {
     topBar,
-    demoTitle
+    demoTitle/* ,
+    'atom-carousel': carousel */
   }
 }
 </script>

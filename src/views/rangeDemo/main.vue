@@ -24,7 +24,7 @@
       <div class="range-title">自定义
       </div>
       <div class="range-item">
-        <atom-range v-model="range2" color="#dd2622"></atom-range>
+        <atom-range v-model="range3" color="#dd2622"></atom-range>
       </div>
     </div>
   </div>
@@ -32,16 +32,33 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
+// import range from '@/packages/range'
 export default {
   data () {
     return {
       range0: 0,
       range1: 10,
-      range2: 0
+      range2: 0,
+      range3: 0
+    }
+  },
+  watch: {
+    range0 (val) {
+      this.$toast(val)
+    },
+    range1 (val) {
+      this.$toast(val)
+    },
+    range2 (val) {
+      this.$toast(val)
+    },
+    range3 (val) {
+      this.$toast(val)
     }
   },
   components: {
-    topBar
+    topBar/* ,
+    'atom-range': range */
   }
 }
 </script>

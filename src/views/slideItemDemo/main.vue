@@ -45,6 +45,7 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
+// import slide from '@/packages/slideItem'
 export default {
   data () {
     return {
@@ -53,7 +54,8 @@ export default {
   },
   components: {
     topBar,
-    demoTitle
+    demoTitle/* ,
+    'atom-slide-item': slide */
   },
   methods: {
     show () {
