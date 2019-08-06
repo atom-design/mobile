@@ -7,7 +7,9 @@ import '@/assets/css/common.css'
 import '@/assets/css/iconfont.css'
 import 'atom-design/bundle/style.css'
 import atomD from 'atom-design'
+
 Vue.use(atomD)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

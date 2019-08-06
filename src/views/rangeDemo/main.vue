@@ -24,7 +24,7 @@
       <div class="range-title">自定义
       </div>
       <div class="range-item">
-        <atom-range v-model="range3" color="#dd2622"></atom-range>
+        <atom-range v-model="range3" color="#dd2622" :isLight="true"></atom-range>
       </div>
     </div>
   </div>
@@ -32,7 +32,6 @@
 
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
-// import range from '@/packages/range'
 export default {
   data () {
     return {
@@ -57,8 +56,7 @@ export default {
     }
   },
   components: {
-    topBar/* ,
-    'atom-range': range */
+    topBar
   }
 }
 </script>
