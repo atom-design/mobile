@@ -33,7 +33,6 @@
 <script type="text/javascript">
 import topBar from '@/components/topBar.vue'
 import demoTitle from '@/components/demoTitle.vue'
-// import carousel from '@/packages/carousel'
 
 export default {
   data () {
@@ -45,8 +44,7 @@ export default {
   },
   components: {
     topBar,
-    demoTitle/* ,
-    'atom-carousel': carousel */
+    demoTitle
   }
 }
 </script>

@@ -3,13 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Vuex from 'vuex'
 import '@/assets/css/common.css'
 import '@/assets/css/iconfont.css'
 import 'atom-design/bundle/style.css'
 import atomD from 'atom-design'
 Vue.use(atomD)
-Vue.use(Vuex)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
